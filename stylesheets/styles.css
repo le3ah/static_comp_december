@@ -1,0 +1,51 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "Header Header Header Header Header Header" ". . Navigation Navigation Navigation Navigation" "Headline Headline Big-Picture Big-Picture Big-Picture Big-Picture" "Story Story Big-Picture Big-Picture Big-Picture Big-Picture" ". . Big-Picture Big-Picture Big-Picture Big-Picture";
+}
+
+.Header { grid-area: Header;
+background-color: #0c2340;
+color: white;
+}
+#top_image {
+  padding-top: 30px;
+  float: left;
+}
+#second_image {
+  float: right;
+}
+.header_text li{
+  list-style-type: none;
+  text-align: right;
+  padding-left: 0px;
+  padding-right: 100px;
+  padding-top: 20px;
+  display: inline-block;
+
+}
+.Navigation {
+  grid-area: Navigation;
+  border: 1px solid #555;
+  text-align: right;
+  padding-left: 50px;
+  padding-right: 0px;
+  display: inline-block;
+
+}
+.Navigation li{
+grid-area: Navigation;
+
+list-style-type: none;
+text-align: right;
+padding-left: 50px;
+padding-right: 0px;
+display: inline-block;
+}
+
+.Big-Picture { grid-area: Big-Picture; }
+
+.Headline { grid-area: Headline; }
+
+.Story { grid-area: Story; }
